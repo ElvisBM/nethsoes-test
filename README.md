@@ -12,7 +12,7 @@
 * Code written entirely in CSS
 * Responsive Simple Created
 * Not framework was used
-* Has not been mined for analysis
+* Has not been minify files css and js for analysis
 * I'm studying Jasmine and testing
 * No metadata was added, only analysis effect
 
