@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+/* For desktop: */
+.col-4{width: 33.33%;float:left;}  
+
+.clear{clear:both;}
+
+body{font-family: 'Open Sans', sans-serif;}
+
+#contanier{position: relative;margin:0 auto;width:100%;max-width:730px;overflow: hidden;}
+
+nav{margin: 10px 30px 0px;}
+#carrinhoClick{background: #dfbd00; border: 0px;border-radius: 0px;font-size: 14px;text-transform: uppercase;font-weight: 200;cursor: pointer;}
+#carrinhoClick:hover{color:#fff;}
+#message{opacity:0;transition:0.3s;position: fixed;margin-top:10%;margin-left:10%;background: #dfbd00; color: #000000a3;padding: 10px 20px; }
+
+#cart{right: -100%;top:0;height:100%;position:absolute;background:#202025;color:#fff;width:70%;box-shadow: -2px 1px 2px #0000008c;transition: 1s;}
+.headCart{text-align: center; margin: 20px 0px;}
+.headCart .bag{display: inline-block;margin-top: 10px;}
+.headCart .bag .icon{display: inline-block;background: url(../img/sprite.png);background-position: -42px 7px;background-repeat: no-repeat;text-indent: -999em;overflow: hidden;height: 50px; width: 45px;}
+.headCart .bag .count{background: #dfbd00;color: #000;border-radius: 27px;font-weight: 600;padding: 3px 2px 0px 2px;width: 16px;height: 16px;display: inline-block;margin-left: -16px;font-size: 13px; text-align: center;vertical-align: middle;}
+.headCart h4{display: inline-block;text-transform: uppercase;font-size: 24px;font-weight: 600;vertical-align: top;margin-top: 30px;margin-left: 10px;}
+
+.products{margin:15px 0px;}
+.products:before{content:'';height:2px;display: block;background: #0000007d;margin: 0 25px;}
+.product{padding:0px 25px;line-height: 14px;}
+.product:hover{background: #131316;}
+.product:hover > .remove{background-position: 0px -11px;}
+.product img{float:left;margin: 0px 5px;}
+.product h4{color:#fff;    font-size: 14px;}
+.product .infos{color:#999;font-size: 12px; font-weight: 400;}
+.product .price{text-align:right;color:#dfbd00;font-size: 14px;margin-top: -10px;}
+.product .price strong{font-weight: bold}
+.product .remove{z-index: 9999;text-indent: -999em;overflow: hidden;margin-top: 25px;background: url(../img/sprite.png);background-position: -26px -11px; height: 20px; width: 20px;cursor: pointer;transition: 0.3s;position: absolute;right: 21px;}
+.product .remove:hover ~ .content{opacity: 0.5;transition: 0.9s}
+.product .remove:hover ~ .content h4{color:#fff;text-decoration: line-through;}
+.product .remove:hover ~ .content .infos{color:#999;text-decoration: line-through;}
+.product .remove:hover ~ .content .price{color:#dfbd00;text-decoration: line-through;}
+.product .content{height: 50px;border-bottom: 2px solid #0000007d;padding: 30px 0px;}
+
+.subtotal{padding:0 25px;}
+.subtotal p{color:#515154;text-transform: uppercase;font-weight: 600;font-size: 14px;}
+.subtotal .value{text-align: right;color:#dfbd00;font-size: 24px;font-weight: 300; margin-top: -15px;}
+.subtotal .value strong{font-weight: 600;}
+.subtotal .installment{text-align: right;color:#5f5f61;font-size: 12px;margin-top: 5px;}
+
+.buy{padding:25px;}
+.buy a{display: block;text-align:center;text-decoration:none;padding: 15px 0px;font-size: 14px;font-weight:600;color:#fff;background: #000;box-shadow: 0px 3px 0px #00000029;}
+
+#content{}
+.produto{text-align: center;margin:15px 0;}
+.produto .title{font-size:14px;color:#313135;max-width: 180px;margin: 5px auto 0;height: 33px;}
+.produto .description{display: none;}
+.produto .availableSizes{display: none;}
+.produto .price{font-size:14px;color:#313135;}
+.produto .price strong{font-size:24px;font-weight: bold;}
+.produto .price:before{content:'';width: 15px;height: 2px;background: #dfbd00;display: block;margin: 0 auto 2px;}
+.produto .installments{font-size:14px;color:#999999;}
+.produto .installments strong{font-weight: 600}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-4 {width: 50%;}
+    #cart{width: 60%;}
+    nav{margin: 10px 13% 0px;}
+}
+
+@media only screen and (max-width: 425px) {
+    /* For mobile phones: */
+    .col-4 {width: 100%;}
+    #cart{width: 100%;}
+    nav{margin: 10px 4% 0px;}
+    #carrinhoClick{position:absolute;z-index:999;}
+
+}
+
+
+
+
+
+
+
+
